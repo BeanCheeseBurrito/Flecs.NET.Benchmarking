@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net7.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+        <RestoreSources>$(RestoreSources);https://gitlab.com/api/v4/projects/51698729/packages/nuget/index.json</RestoreSources>
+    </PropertyGroup>
+
+    <PropertyGroup>
+        <PublishAot>true</PublishAot>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Flecs.NET.Debug" Version="3.2.8-dev-2023-11-02-10-11-47" Condition="'$(Configuration)' == 'Debug'" />
+        <PackageReference Include="Flecs.NET.Release" Version="3.2.8-dev-2023-11-02-10-11-47" Condition="'$(Configuration)' == 'Release'" />
+    </ItemGroup>
+
+</Project>
