@@ -17,7 +17,7 @@ public static partial class Benchmarks
             for (int i = 0; i < depth; i++)
             {
                 for (int w = 0; w < width - 1; w++)
-                    cur = world.Entity().ChildOf(cur);
+                    world.Entity().ChildOf(cur);
 
                 cur = world.Entity().ChildOf(cur);
             }

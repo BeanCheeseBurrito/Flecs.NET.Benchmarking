@@ -30,7 +30,7 @@ public struct Benchmark
     public static void Run(string name, int entities, int operations, Action action)
     {
         RuntimeHelpers.PrepareDelegate(action);
-        Benchmark benchmark = new(name, 1, entities, operations);
+        Benchmark benchmark = new(name, .5f, entities, operations);
         do
         {
             action();

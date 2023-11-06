@@ -74,10 +74,10 @@ Benchmarks.SetCmd("Set Cmd 2", 2);
 Benchmarks.SetCmd("Set Cmd 16", 16);
 Benchmarks.SetCmd("Set Cmd 32", 32);
 
-Benchmarks.GetMutRemoveCmd("get_mut_remove_cmd_1", 1);
-Benchmarks.GetMutRemoveCmd("get_mut_remove_cmd_2", 2);
-Benchmarks.GetMutRemoveCmd("get_mut_remove_cmd_16", 16);
-Benchmarks.GetMutRemoveCmd("get_mut_remove_cmd_32", 32);
+Benchmarks.GetMutRemoveCmd("Get Mut Remove Cmd 1", 1);
+Benchmarks.GetMutRemoveCmd("Get Mut Remove Cmd 2", 2);
+Benchmarks.GetMutRemoveCmd("Get Mut Remove Cmd 16", 16);
+Benchmarks.GetMutRemoveCmd("Get Mut Remove Cmd 32", 32);
 
 Benchmarks.CreateDelete("Create Delete empty", 0, false);
 Benchmarks.CreateDelete("Create Delete 1 Tag", 1, false);
